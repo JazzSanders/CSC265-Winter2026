@@ -1,0 +1,178 @@
+/*
+
+   Index-styles.css for CSC265
+      Author: Jasmine Sanders
+      Date: 01/17/2026
+
+      Filename: index-styles.css
+      Required Files: 
+      Description: style sheet for index.html for CSC265-Intermediate Website Design (Winter 2026)
+
+*/
+
+/* =========================================================================
+    Body Styles
+=========================================================================*/
+
+/* Body Styles */
+body {
+  font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 16pt;
+  width: 85%;
+  margin: auto;
+  background-color: #333333;
+}
+
+/* p */
+p {
+  margin: 15px;
+  padding: 15px;
+}
+
+/* =========================================================================
+    Header Styles
+=========================================================================*/
+
+/* <header> definition */
+header {
+  overflow: auto;
+  background-color: #e0ffff;
+  border-bottom: 3px solid #666;
+}
+
+/* Header h1 */
+header h1 {
+  font-size: 36pt;
+  margin: 35px 0px 0px 0px;
+  padding: 15px 0px 0px 15px;
+  background-color: #e0ffff;
+}
+
+/* Header h3 */
+header h3 {
+  font-size: 24pt;
+  margin: 0px;
+  padding: 0px 0px 15px 15px;
+  background-color: #e0ffff;
+}
+
+/* h1 */
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 22pt;
+  text-align: left;
+  letter-spacing: 2px;
+  margin: 0px;
+  padding: 15px 0px 0px 15px;
+  color: #004d40;
+}
+
+/* h3 */
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  text-align: left;
+  color: #c62828;
+}
+
+/* Image inside the <header> */
+.profile-pic {
+  float: right;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 10px;
+}
+
+/* =========================================================================
+    Nav Styles
+=========================================================================*/
+
+/* <nav> definition */
+nav {
+  float: left;
+  background-color: #e0ffff;
+  width: 25%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #000000;
+  text-align: center;
+  border-right: 2px solid #666;
+  height: 2714px; /* requires manual adjustment */
+}
+
+/* a */
+a {
+  text-decoration: none;
+  color: #1976d2;
+}
+
+a:hover {
+  color: #ffb300;
+}
+
+/* =========================================================================
+    Section Styles
+=========================================================================*/
+
+/* <section> definition */
+section {
+  overflow: hidden;
+  width: 75%;
+  background-color: #f0fff0;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* table */
+table {
+  border: none;
+  padding: 2px 5px;
+  width: 90%;
+  margin-left: 30px;
+}
+
+/* Remove default cell borders */
+td,
+th {
+  border: none;
+  padding: 2px 5px;
+  vertical-align: top;
+}
+
+/* Banded Rows - Title/Week Rows */
+.banded-row {
+  background-color: #d1e7e7;
+}
+
+.banded-row td:first-child {
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 5px;
+}
+
+/* Banded Rows - Description Rows */
+.description-row td {
+  background-color: transparent;
+  color: #000000;
+  text-align: left;
+  vertical-align: top;
+  padding: 5px 5px 5px 15px;
+}
+
+/* =========================================================================
+    Footer Styles
+=========================================================================*/
+
+/* <footer> definition */
+footer {
+  clear: both;
+  background-color: #444444;
+  color: #cccccc;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 3px solid #666;
+  font-size: 0.8em;
+}
