@@ -37,8 +37,8 @@ p {
 /* <header> definition */
 header {
   overflow: auto;
-  background-color: #e0ffff;
-  border-bottom: 3px solid #666;
+  background-color: #9ee4b6;
+  border-bottom: 3px solid #333333;
 }
 
 /* Header h1 */
@@ -46,7 +46,7 @@ header h1 {
   font-size: 36pt;
   margin: 35px 0px 0px 0px;
   padding: 15px 0px 0px 15px;
-  background-color: #e0ffff;
+  background-color: #9ee4b6;
 }
 
 /* Header h3 */
@@ -54,7 +54,7 @@ header h3 {
   font-size: 24pt;
   margin: 0px;
   padding: 0px 0px 15px 15px;
-  background-color: #e0ffff;
+  background-color: #9ee4b6;
 }
 
 /* h1 */
@@ -65,7 +65,7 @@ h1 {
   letter-spacing: 2px;
   margin: 0px;
   padding: 15px 0px 0px 15px;
-  color: #004d40;
+  color: #14281d;
 }
 
 /* h3 */
@@ -73,7 +73,7 @@ h3 {
   font-family: Arial, sans-serif;
   font-size: 16pt;
   text-align: left;
-  color: #c62828;
+  color: #840032;
 }
 
 /* Image inside the <header> */
@@ -91,25 +91,25 @@ h3 {
 /* <nav> definition */
 nav {
   float: left;
-  background-color: #e0ffff;
+  background-color: #9ee4b6;
   width: 25%;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   color: #000000;
   text-align: center;
-  border-right: 2px solid #666;
+  border-right: 2px solid #333333;
   height: 2000px; /* requires manual adjustment */
 }
 
 /* a */
 a {
   text-decoration: none;
-  color: #1976d2;
+  color: #14281d;
 }
 
 a:hover {
-  color: #ffb300;
+  color: #840032;
 }
 
 /* =========================================================================
@@ -120,7 +120,7 @@ a:hover {
 section {
   overflow: hidden;
   width: 75%;
-  background-color: #f0fff0;
+  background-color: #9ee4b6;
   padding: 15px;
   box-sizing: border-box;
   margin: 0;
@@ -144,7 +144,7 @@ th {
 
 /* Banded Rows - Title/Week Rows */
 .banded-row {
-  background-color: #d1e7e7;
+  background-color: #50c878;
 }
 
 .banded-row td:first-child {
@@ -170,9 +170,9 @@ th {
 footer {
   clear: both;
   background-color: #444444;
-  color: #cccccc;
+  color: #ffffff;
   text-align: center;
   padding: 10px 0;
-  border-top: 3px solid #666;
+  border-top: 3px solid #333333;
   font-size: 0.8em;
 }
