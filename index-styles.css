@@ -21,6 +21,7 @@ body {
   font-size: 16pt;
   width: 85%;
   margin: auto;
+  border-left: 2px solid #333333;
   background-color: #9ee4b6;
 }
 
@@ -98,7 +99,6 @@ nav {
   box-sizing: border-box;
   color: #000000;
   text-align: center;
-  border-right: 2px solid #333333;
   
 }
 
