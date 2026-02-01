@@ -1,3 +1,7 @@
+// Reference the HTML
+const displayArea = document.getElementById('display-area');
+
+
 function printSum(x, y) {
    // TODO: Add your solution here
    const numX = parseFloat(x);
@@ -16,11 +20,14 @@ function printSum(x, y) {
       const sum = numX + numY;
       console.log(`Sum is ${sum}.`);
    }
+
+
+// Write to the webpage instead of (or in addition to) the console
+   console.log(message);
+   displayArea.innerHTML += message + "<br>"; 
 }
 
-
-console.log("Testing printSum()...");
-
+// Running the tests
 printSum(3, 6);            // 9
 printSum(3.5, 6.1);        // 9.6
 printSum("hello", 6);      // 'hello' is not a number
