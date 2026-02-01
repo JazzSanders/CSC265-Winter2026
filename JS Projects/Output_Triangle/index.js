@@ -1,18 +1,25 @@
-/**
- * Draws a triangle of asterisks in the console.
- * @param {number} triangleSize - The number of lines to draw.
- */
-function drawTriangle(triangleSize) {
-    // We loop from 1 up to (and including) the triangleSize
-    for (let i = 1; i <= triangleSize; i++) {
-        // Create a string of asterisks based on the current line number 'i'
-        let line = "*".repeat(i);
+function generateTriangle() {
+    const height = parseInt(document.getElementById('height').value);
+    const display = document.getElementById('triangle-display');
+    
+    // We start with an empty string
+    let triangleString = "";
+
+    // Outer loop for each row
+    for (let i = 1; i <= height; i++) {
         
-        // Output the line to the console
-        console.log(line);
+        // Inner loop to add the asterisks for that row
+        for (let j = 1; j <= i; j++) {
+            triangleString += "* ";
+        }
+        
+        // Add a newline character at the end of each row
+        triangleString += "\n";
     }
+
+    // Instead of console.log(triangleString), we update the page:
+    display.innerText = triangleString;
 }
 
-// Initial test call as per example
-console.log("Testing drawTriangle(4):");
-drawTriangle(4);
+// Generate one on startup
+window.onload = generateTriangle;

@@ -1,57 +1,68 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f0f2f5;
 }
 
 .container {
-    background: #fff;
+    background: white;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+.input-group {
+    margin-bottom: 10px;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    margin: 15px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 12px;
     box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+input:focus {
+    border-color: #007bff;
 }
 
-.status-box {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: none; /* Hidden until button is clicked */
+/* The Progress Bar Container */
+.strength-meter {
+    height: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin: 15px 0 5px 0;
+    overflow: hidden;
 }
 
-.status-box.strong {
-    display: block;
-    background-color: #d4edda;
-    color: #155724;
+/* The actual bar that grows */
+#strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease, background-color 0.4s ease;
 }
 
-.status-box.weak {
-    display: block;
-    background-color: #f8d7da;
-    color: #721c24;
+#strength-text {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.requirements {
+    list-style: none;
+    padding: 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.requirements li.valid {
+    color: #28a745;
+    text-decoration: line-through;
 }
