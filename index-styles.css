@@ -10,170 +10,106 @@
 
 */
 
-/* =========================================================================
-    Body Styles
-=========================================================================*/
+:root {
+  --primary-green: #2c5e40;
+  --accent-green: #9ee4b6;
+  --light-bg: #f8f9fa;
+}
 
-/* Body Styles */
+/* General Styles */
 body {
-  font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif;
-  color: black;
-  font-size: 16pt;
-  width: 85%;
-  margin: auto;
-  border-left: 2px solid #333333;
-  border-right: 2px solid #333333;
-  background-color: #9ee4b6;
+  background-color: var(--light-bg);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* p */
-p {
-  margin: 15px;
-  padding: 15px;
+/* Navigation */
+.nav-link {
+  font-weight: 500;
+  color: var(--primary-green);
 }
 
-/* =========================================================================
-    Header Styles
-=========================================================================*/
-
-/* <header> definition */
-header {
-  overflow: auto;
-  background-color: #9ee4b6;
-  border-bottom: 3px solid #333333;
+.nav-link:hover {
+  color: #1a3c29;
+  text-decoration: underline;
 }
 
-/* Header h1 */
-header h1 {
-  font-size: 36pt;
-  margin: 35px 0px 0px 0px;
-  padding: 15px 0px 0px 15px;
-  background-color: #9ee4b6;
+/* Header Sections */
+.hero-section {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid var(--accent-green);
 }
 
-/* Header h3 */
-header h3 {
-  font-size: 24pt;
-  margin: 0px;
-  padding: 0px 0px 15px 15px;
-  background-color: #9ee4b6;
+.header-mini {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid var(--accent-green);
 }
 
-/* h1 */
-h1 {
-  font-family: Arial, sans-serif;
-  font-size: 22pt;
-  text-align: left;
-  letter-spacing: 2px;
-  margin: 0px;
-  padding: 15px 0px 0px 15px;
-  color: #14281d;
-}
-
-/* h3 */
-h3 {
-  font-family: Arial, sans-serif;
-  font-size: 16pt;
-  text-align: left;
-  color: #840032;
-}
-
-/* Image inside the <header> */
+/* Profile Picture */
 .profile-pic {
-  float: right;
-  max-width: 300px;
-  max-height: 300px;
-  margin: 10px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid var(--accent-green);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-/* =========================================================================
-    Nav Styles
-=========================================================================*/
-
-/* <nav> definition */
-nav {
-  float: left;
-  background-color: #9ee4b6;
-  width: 25%;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  color: #000000;
-  text-align: center;
-  
+/* Optional: Subtle hover effect for extra polish */
+.profile-pic:hover {
+  transform: scale(1.05);
 }
 
-/* a */
-a {
-  text-decoration: none;
-  color: #14281d;
+/* Responsive adjustment for smaller screens */
+@media (max-width: 576px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
 }
 
-a:hover {
-  color: #840032;
-}
-
-/* =========================================================================
-    Section Styles
-=========================================================================*/
-
-/* <section> definition */
-section {
-  overflow: hidden;
-  width: 75%;
-  background-color: #9ee4b6;
-  padding: 15px;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-/* table */
-table {
+/* Cards & Portfolio Items */
+.card {
   border: none;
-  padding: 2px 5px;
-  width: 90%;
-  margin-left: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
 }
 
-/* Remove default cell borders */
-td,
-th {
+.card:hover {
+  transform: translateY(-5px);
+}
+.project-card {
+  transition: all 0.3s ease;
   border: none;
-  padding: 2px 5px;
-  vertical-align: top;
+  border-top: 4px solid var(--accent-green);
 }
 
-/* Banded Rows - Title/Week Rows */
-.banded-row {
-  background-color: #50c878;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.banded-row td:first-child {
-  font-weight: bold;
-  text-align: center;
-  padding: 8px 5px;
+/* Buttons */
+.btn-view {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
 }
 
-/* Banded Rows - Description Rows */
-.description-row td {
-  background-color: transparent;
-  color: #000000;
-  text-align: left;
-  vertical-align: top;
-  padding: 5px 5px 5px 15px;
+.btn-view:hover {
+  background-color: #1e422d;
+  color: white;
 }
 
-/* =========================================================================
-    Footer Styles
-=========================================================================*/
-
-/* <footer> definition */
+/* Footer */
 footer {
-  clear: both;
-  background-color: #444444;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
-  border-top: 3px solid #333333;
-  font-size: 0.8em;
+  background-color: #333;
+  color: #ccc;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
 }
