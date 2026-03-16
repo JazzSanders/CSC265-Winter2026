@@ -2,7 +2,7 @@
 
    Index-styles.css for CSC265
       Author: Jasmine Sanders
-      Date: 01/17/2026
+      Date: 03/15/2026
 
       Filename: index-styles.css
       Required Files: 
@@ -127,3 +127,10 @@ footer {
             text-align: center;
             line-height: 45px;
         }
+
+/*Reume Styles */
+.resume-header { background-color: var(--primary-green); color: white; padding: 3rem 0; border-bottom: 5px solid var(--accent-green); }
+.section-title { color: var(--primary-green); border-bottom: 2px solid var(--accent-green); padding-bottom: 0.5rem; margin-top: 2rem; margin-bottom: 1.5rem; font-weight: bold; }
+.date-badge { background-color: var(--accent-green); color: var(--primary-green); font-weight: bold; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; }
+.contact-link { color: white; text-decoration: none; margin: 0 10px; }
+.contact-link:hover { color: var(--accent-green); }
